@@ -1,6 +1,7 @@
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
+  --color-tertiary: #02cdf1;
   --color-accent: #ff3400;
   --color-heading: #210e6b;
   --color-body: #918ca4;
@@ -10,8 +11,8 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: Inter, Arial, Helvetica, sans-serif;
   color: var(--color-body);
+  font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
 }
@@ -72,5 +73,38 @@ a {
 @media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
+  }
+}
+/* badges */
+.badge {
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  word-wrap: nowrap;
+}
+
+.badge--primary {
+  color: white;
+  background: var(--color-primary);
+}
+.badge--secondary {
+  color: white;
+  background: var(--color-secondary);
+}
+.badge--tertiary {
+  color: white;
+  background: var(--color-tertiary);
+}
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+  .badge--small {
+    font-size: 1.2rem;
   }
 }
