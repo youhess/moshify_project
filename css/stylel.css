@@ -5,6 +5,7 @@
   --color-accent: #ff3400;
   --color-heading: #210e6b;
   --color-body: #918ca4;
+  --color-iconback: #f3f9fa;
 }
 /* Typography */
 html {
@@ -134,5 +135,33 @@ a {
   .list--tick .list__item {
     padding-left: 0rem;
     margin-bottom: 1rem;
+  }
+}
+/* icons */
+.icon-container {
+  background: var(--color-iconback);
+  width: 8rem;
+  height: 8rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+.icon {
+  width: 4rem;
+  height: 4rem;
+}
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+@media screen and (min-width: 1024px) {
+  .icon-container {
+    width: 6rem;
+    height: 6rem;
+  }
+  .icon {
+    width: 3rem;
+    height: 3rem;
   }
 }
