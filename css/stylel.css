@@ -7,6 +7,11 @@
   --color-body: #918ca4;
   --color-iconback: #f3f9fa;
 }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 /* Typography */
 html {
   font-size: 62.5%;
@@ -163,5 +168,61 @@ a {
   .icon {
     width: 3rem;
     height: 3rem;
+  }
+}
+/* button */
+/* block elements fit the 100%width */
+.button {
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem 0;
+  /* text-transform */
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  border: 0;
+  /* 鼠标显示成手指 让他看起来可以点击 */
+  cursor: pointer;
+  /* dont lat text wrap t osecond line  */
+  white-space: nowrap;
+}
+.button--primary {
+  color: white;
+  background: var(--color-accent);
+}
+.button--primary:hover {
+  background: #fd4416;
+}
+.button--secondary {
+  color: white;
+  background: var(--color-secondary);
+}
+.button--secondary:hover {
+  background: #2cdfff;
+}
+.button--unselected {
+  color: var(--color-heading);
+  background: white;
+  border: 0.2rem solid var(--color-heading);
+}
+.button--unselected:hover {
+  background: #392c6d;
+}
+.button--selected {
+  color: white;
+  background: var(--color-heading);
+}
+.button--selected:hover {
+  background: #33246d;
+}
+.button--block {
+  width: 100%;
+  display: inline-block;
+}
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.5rem;
   }
 }
