@@ -18,10 +18,40 @@
     <link rel="stylesheet" href="css/stylel.css" />
     <title>Document</title>
   </head>
-  <body>
-    <div class="grid grid--1x2">
-      <div style="height: 10rem; background: blue"></div>
-      <div style="height: 10rem; background: gray"></div>
+  <body style="padding: 5rem">
+    <div class="card testimonial">
+      <div class="grid grid--1x2">
+        <div class="testimonial__image">
+          <img src="images/testimonial.jpg" alt="testimonial" />
+          <span class="icon-container icon-container--accent testimonial__icon">
+            <svg class="icon icon--small icon--white">
+              <use xlink:href="images/sprite.svg#quotes"></use>
+            </svg>
+          </span>
+        </div>
+
+        <blockquote class="quote">
+          <p class="quote__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
+            suscipit ut, provident, officiis, maiores laudantium quo
+            voluptatibus consequuntur voluptates debitis eum quibusdam ratione
+            fuga in unde! Maiores quaerat reprehenderit dolorem
+          </p>
+          <footer>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary quote__line">
+                  <use xlink:href="images/sprite.svg#line"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title quote__author">Jhone Lumeo</h3>
+                <p class="media__content">Mosh Company ceo</p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
     </div>
   </body>
 </html>
