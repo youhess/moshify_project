@@ -19,17 +19,19 @@
     <title>Document</title>
   </head>
   <body style="padding: 3rem">
-    <div class="callout callout--primary">
-      <div class="grid grid--1x2">
-        <div class="callout__content">
-          <h2 class="callout__title">Ready to get started?</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-            omnis.
-          </p>
-        </div>
-        <a href="#" class="button button--secondary button--long">Get Start</a>
+    <div class="collapsible collapsible--expanded">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading">Item 1</h2>
+        <svg class="icon icon--primary collapsible__chevron">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+      </header>
+      <div class="collapsibale__content">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam
+        minus alias cupiditate debitis facere iste ratione, saepe repellendus?
+        Fugiat, ipsam?
       </div>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
