@@ -303,6 +303,9 @@ a {
   background: var(--color-secondary);
 }
 /* plans */
+.plan {
+  transition: transform 0.15s ease-out;
+}
 .plan__name {
   color: white;
   font-size: 2.4rem;
@@ -345,6 +348,9 @@ a {
   .plan__description {
     font-size: 1.5rem;
   }
+}
+.plan--popular {
+  transform: scale(1.1);
 }
 .plan--popular .card__header {
   position: relative;
@@ -645,5 +651,21 @@ a {
 @media screen and (min-width: 768px) {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
+/* plans Block */
+.block-plans .grid {
+  gap: 4rem;
+}
+.block-plans .plan {
+  max-width: 500px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .block-plans .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .plan:hover {
+    transform: scale(1.2);
   }
 }
