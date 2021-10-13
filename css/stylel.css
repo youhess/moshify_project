@@ -669,3 +669,31 @@ a {
     transform: scale(1.2);
   }
 }
+/* feature  block */
+.feature-media {
+  flex-direction: column;
+}
+.feature-media__body {
+  margin: 0;
+}
+.featuer__image {
+  width: 100%;
+}
+.block-features .feature {
+  max-width: 570px;
+  margin: 4rem auto;
+}
+.feature {
+  gap: 8rem;
+}
+@media screen and (min-width: 1024px) {
+  .feature {
+    align-items: center;
+  }
+  .block-features .feature {
+    max-width: 1140px;
+  }
+  .feature:nth-of-type(odd) .feature__content {
+    order: 2;
+  }
+}
