@@ -19,74 +19,47 @@
     <title>Document</title>
   </head>
   <body style="">
-    <section class="block block__dark block--skewed-right block-showcase">
+    <section class="block container">
       <header class="block__header">
-        <h2>User-Friendly Control Panel</h2>
+        <h2 class="heading">What our Customer are Saying</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </header>
-      <div class="container grid grid--1x2">
-        <picture class="block-showcase__image">
-          <source
-            type="image/webp"
-            srcset="images/ipad@2.webp 2x, images/ipad.webp 1x"
-          />
-          <source
-            type="image/png"
-            srcset="images/ipad@2.png 2x, images/ipad.png 1x"
-          />
-          <img src="/images/ipad.png" alt="" />
-        </picture>
-        <ul class="list">
-          <li>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#settings"></use>
-                </svg>
+      <div class="card testimonial">
+        <div class="grid grid--1x2">
+          <div class="testimonial__image">
+            <img src="images/testimonial.jpg" alt="testimonial" />
+            <span
+              class="icon-container icon-container--accent testimonial__icon"
+            >
+              <svg class="icon icon--small icon--white">
+                <use xlink:href="images/sprite.svg#quotes"></use>
+              </svg>
+            </span>
+          </div>
+
+          <blockquote class="quote">
+            <p class="quote__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
+              suscipit ut, provident, officiis, maiores laudantium quo
+              voluptatibus consequuntur voluptates debitis eum quibusdam ratione
+              fuga in unde! Maiores quaerat reprehenderit dolorem
+            </p>
+            <footer>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary quote__line">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">Jhone Lumeo</h3>
+                  <p class="media__content">Mosh Company ceo</p>
+                </div>
               </div>
-              <div class="media__body">
-                <h3 class="media__title">Easy Start & Managed Updates</h3>
-                <p class="media__content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Minima eaque nobis sed ea quisquam id ratione numquam
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#settings"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title">Easy Start & Managed Updates</h3>
-                <p class="media__content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Minima eaque nobis sed ea quisquam id ratione numquam
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#settings"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title">Easy Start & Managed Updates</h3>
-                <p class="media__content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Minima eaque nobis sed ea quisquam id ratione numquam
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
+            </footer>
+          </blockquote>
+        </div>
       </div>
     </section>
-    <script src="js/main.js"></script>
   </body>
 </html>
