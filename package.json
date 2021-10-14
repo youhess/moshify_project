@@ -1,0 +1,23 @@
+{
+  "name": "moshify_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youhess/moshify_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youhess/moshify_project/issues"
+  },
+  "homepage": "https://github.com/youhess/moshify_project#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}

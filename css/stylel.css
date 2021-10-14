@@ -92,10 +92,10 @@ a {
 /* badges */
 .badge {
   border-radius: 20px;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   font-size: 2rem;
   font-weight: 600;
-  word-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .badge--primary {
@@ -202,7 +202,7 @@ a {
   margin: 1rem 0;
   /* text-transform */
   text-transform: uppercase;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   border: 0;
   /* 鼠标显示成手指 让他看起来可以点击 */
   cursor: pointer;
@@ -280,6 +280,7 @@ a {
   /* let input grow take up all this parent's space */
   flex-grow: 1;
   padding-left: 4rem;
+  width: 0;
 }
 .input-group .button {
   margin: 0.4rem 0.4rem;
@@ -653,7 +654,7 @@ a {
 }
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
